@@ -1,15 +1,15 @@
 body{
-    background: #CCC;
+    background: white;
     -webkit-user-select: none;
 }
 
 header{
-    background-color: #CCC;
+    background-color: white;
 }
 
 #head-bg{
-    background: url(../images/indie.png);
-    background-size: 100%;
+    background: url(../images/bgrock.jpg);
+    background-size: 100% 400px;
     background-repeat: no-repeat;
     height: 400px;
 }
@@ -17,6 +17,11 @@ header{
 #name{
     text-align: center;
     vertical-align: middle;
+    font-size: 20px;
+}
+
+#name h3{
+    font-size: 80px;
 }
 
 #about{
@@ -26,7 +31,7 @@ header{
 .card-footer{
     display: inline-block;
     text-align: center;
-    background-color: coral;
+    background-color: rgb(41, 41, 41);
 }
 
 .fa {
@@ -59,19 +64,19 @@ header{
 }
 
 .span-header{
-    background-color: coral;
+    background-color: rgb(41, 41, 41);
     font-size: 20px;
     padding: 10px 10px 10px 10px;
 }
 
 body hr{
-    background-color: coral;
+    background-color: rgb(41, 41, 41);
     border-width: 2px;
     margin-top: 7px;
 }
 
 .skill{
-    background-color: coral;
+    background-color: rgb(41, 41, 41);
     opacity: 0.7;
     padding: 2px 2px 2px 2px;
     text-align: center;
@@ -79,9 +84,17 @@ body hr{
 }
 
 .card{
-    border-top: 3px solid coral;
+    border: 3px solid rgb(41, 41, 41);
 }
 
 .top-buffer{
     margin-top: 15px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }

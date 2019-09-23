@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Michael Wang</title>
 </head>
 <body>
@@ -19,7 +17,7 @@
         <div class = "container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Michael Wang</a>
+                    <a class="navbar-brand" href="http://michaelwang.tech">Michael Wang</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -60,17 +58,12 @@
                     <div class="card bg-white">
                         <div class="card-title my-4">
                             <div class="media">
-                                <img class="img-fluid rounded mx-4 d-none d-lg-block" src="images/profile.jpeg" width = "350" height = "350" alt="Michael Wang">
+                                <img class="img-fluid rounded mx-4 d-none d-lg-block animated fadeIn delay-1s" src="images/profile.jpeg" width = "350" height = "350" alt="Michael Wang">
                                 <div class="media-body" id="name">
-                                    <h3 class="display-3 ml-5 my-5 text-center">Hello, I'm <strong>Michael</strong></h1>
-                                    <p class="text-muted ml-5 text-center">Aspiring Software and Biomedical Engineer"<p>     
+                                    <h3 class="display-3 my-5 text-center animated fadeInUp delay-0.7s">Hello, I'm <strong>Michael</strong></h1>
+                                    <p class="text-muted text-center animated fadeIn delay-1s">Aspiring Software and Biomedical Engineer<p>     
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://www.facebook.com/mike.wang.35912672" target="_blank" class ="fa fa-facebook fa-2x"></a>
-                            <a href="https://github.com/cloudislife8899" target="_blank" class ="fa fa-github fa-2x"></a>
-                            <a href="https://www.linkedin.com/in/michael-a-wang" target="_blank" class ="fa fa-linkedin fa-2x"></a>
                         </div>
                     </div>
                 </div>
@@ -81,9 +74,8 @@
             <div class="row">
                 <div class="col">
                     <span class="text-white rounded-top span-header" id="about-info">About Me</span><hr>
-                    <p class="lead text-justify">I am currently a second year student studying biomedical engineering at The University of Waterloo. I enjoy working in teams and using technology towards solving real world issues.
- In the future, my goal is to develop innovative solutions for disease diagnosis and surgery by combining AI technology with current medical practices. When I'm not busy, I love to solve coding challenges and watch documentaries and TED talks regarding science.
- I also hope to one day have the opportunity to travel the world.
+                    <p class="lead text-justify">I am currently a second year student studying biomedical engineering at The University of Waterloo. Some of my favourite things to do include, working on team projects and testing the latest technologies. In my spare time, I also enjoy solving coding challenges and watching documentaries and TED talks regarding science.
+ In the future, my goal is to develop innovative solutions for disease diagnosis and surgery by combining AI technology with current medical practices. I also hope to one day have the opportunity to travel the world and experience different cultures. My current goal is to find a software/developer co-op inorder to broaden my software knowledge. 
                     </p>
                 </div>
             </div>
@@ -107,27 +99,35 @@
                 <span class="text-white rounded skill">Leadership</span>
                 <span class="text-white rounded skill">Organization</span>
                 <span class="text-white rounded skill">Hardworking</span>
+                <span class="text-white rounded skill">Time Management</span> 
             </div>
+        </div>
+        <br>
+        <div>
+            <span>Currently learning: </span>
+            <span class="text-white rounded skill">React</span> 
+            <span class="text-white rounded skill">Git</span> 
+            <span class="text-white rounded skill">Node</span> 
         </div>
     </div>
 
 
     <div class="container mt-5" id="experiences">
         <span class="text-white rounded-top span-header">My Work Experiences</span><hr>
-        <div class="row justify-content-around">
-            <div class="col col-lg-5 card bg-white">
+        <div class="row justify-content-around scroll">
+            <div class="col col-lg-5 card bg-white wow slideInLeft">
                 <img src="images/avro.png" width="200" height="80" class="img-fluid mx-auto py-3">
                 <h4 class="text-center">Research Assistant</h3>
                 <p class="text-center">May 2019 - Aug 2019</p>
-                <p class="lead text-justify p-2">As a research assistant, my main responsibility was setting up diffusion tests to collect and analyze data for product optimization. I also took initiative by
+                <p class="lead text-justify p-1">As a research assistant, my main responsibility was setting up diffusion tests to collect and analyze data for product optimization. I also took initiative by
  improving on existing procedures which decreased data variability and saved time and resources.
                 </p>
             </div>
-            <div class="col col-lg-5 card bg-white">
+            <div class="col col-lg-5 card bg-white wow slideInRight">
                 <img src="images/booster.png" width="200" height="80" class="img-fluid mx-auto py-3">
                 <h4 class="text-center">Associate</h3>
                 <p class="text-center">Aug 2017 - Aug 2018</p>
-                <p class="lead text-justify p-2">Aside from serving customers and maintaining the store, I implemented methods to increase efficiency by reducing manual labor from assembling machine 
+                <p class="lead text-justify p-1">Aside from serving customers and maintaining the store, I implemented methods to increase efficiency by reducing manual labor from assembling machine 
 equipment. Since this was my very first job, I was also able to develop many essential skills such as teamwork and organization. 
                 </p>
             </div>
@@ -136,58 +136,57 @@ equipment. Since this was my very first job, I was also able to develop many ess
 
     <div class="container mt-5" id="projects">
         <span class="text-white rounded-top span-header">My Projects</span><hr>
-        <div class="row justify-content-around">
-            <div class="col col-lg-5 card bg-white">
-                <img src="images/avro.png" width="200" height="80" class="img-fluid mx-auto py-3">
+        <div class="row justify-content-around scroll">
+            <div class="col col-lg-5 card bg-white wow slideInLeft">
+                <img src="images/brawl.png" width="200" height="80" class="img-fluid mx-auto py-3">
                 <h4 class="text-center">Brawl Stars Database</h3>
                 <p class="text-center">Side Project</p>
-                <p class="lead text-justify p-2">
+                <p class="lead text-justify p-2">Developed a content management system for the popular mobile game "Brawl Stars" using PHP and MySQL to create, read, update and delete the statistics of various brawlers in a database.
                 </p>
             </div>
-            <div class="col col-lg-5 card bg-white">
-                <img src="images/booster.png" width="200" height="80" class="img-fluid mx-auto py-3">
-                <h4 class="text-center"></h3>
+            <div class="col col-lg-5 card bg-white wow slideInRight">
+                <img src="images/ru.png" width="200" height="80" class="img-fluid mx-auto py-3">
+                <h4 class="text-center">Routes</h3>
                 <p class="text-center">RU Hacks</p>
-                <p class="lead text-justify p-2">
+                <p class="lead text-justify p-2">Designed a social web application using HTML, CSS, and Google Maps Platform that would allow friends to organize group events.
                 </p>
             </div>
         </div>
 
         <div class="top-buffer"></div>
 
-        <div class="row justify-content-around">
-            <div class="col col-lg-5 card bg-white">
-                <img src="images/avro.png" width="200" height="80" class="img-fluid mx-auto py-3">
+        <div class="row justify-content-around scroll">
+            <div class="col col-lg-5 card bg-white wow slideInLeft">
+                <img src="images/stock.png" width="200" height="80" class="img-fluid mx-auto py-3">
                 <h4 class="text-center">Stock Predictor</h3>
                 <p class="text-center">Side Project (Ongoing)</p>
-                <p class="lead text-justify p-2">
+                <p class="lead text-justify p-2">Currently developing a react application that will be able to retrieve real-time stock data and compute which ones are most likely to go up.
                 </p>
             </div>
-            <div class="col col-lg-5 card bg-white">
-                <img src="images/booster.png" width="200" height="80" class="img-fluid mx-auto py-3">
+            <div class="col col-lg-5 card bg-white wow slideInRight">
+                <img src="images/block.png" width="200" height="80" class="img-fluid mx-auto py-3">
                 <h4 class="text-center">Block Party</h3>
                 <p class="text-center">Design Project</p>
-                <p class="lead text-justify p-2"> 
+                <p class="lead text-justify p-2">Conceptualized a high-fidelity prototype toy for young children with low-functioning autism and created 3D models using SolidWorks.
                 </p>
             </div>
         </div>
 
         <div class="top-buffer"></div>
 
-        <div class="row justify-content-around">
-            <div class="col col-lg-5 card bg-white">
-                <img src="images/avro.png" width="200" height="80" class="img-fluid mx-auto py-3">
+        <div class="row justify-content-around scroll">
+            <div class="col col-lg-5 card bg-white wow slideInLeft">
+                <img src="images/space.png" width="200" height="80" class="img-fluid mx-auto py-3">
                 <h4 class="text-center">Space Invaders</h3>
-                <p class="text-center"></p>
-                <p class="lead text-justify p-2">
+                <p class="text-center">Side Project</p>
+                <p class="lead text-justify p-2">Utilized Java and object-oriented programming concepts to recreate the popular "Space Invaders" game. Implemented external input components using key listener to enable dynamic gameplay.
                 </p>
             </div>
-            <div class="col col-lg-5 card bg-white">
-                <img src="images/booster.png" width="200" height="80" class="img-fluid mx-auto py-3">
-                <h4 class="text-center">AI</h3>
-                <p class="text-center">Aug 2017 - Aug 2018</p>
-                <p class="lead text-justify p-2">Aside from serving customers and maintaining the store, I implemented methods to increase efficiency by reducing manual labor from assembling machine 
-equipment. Since this was my very first job, I was also able to develop many essential skills such as teamwork and organization. 
+            <div class="col col-lg-5 card bg-white wow slideInRight">
+                <img src="images/maze.png" width="200" height="80" class="img-fluid mx-auto py-3">
+                <h4 class="text-center">Maze Pathfinder</h3>
+                <p class="text-center">School Project</p>
+                <p class="lead text-justify p-2">Built a desktop application for users to design and play their own maze using Java GUI. After the user creates the maze, a function is called to compute if the maze is solvable.
                 </p>
             </div>
         </div>
@@ -199,6 +198,7 @@ equipment. Since this was my very first job, I was also able to develop many ess
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -208,15 +208,21 @@ equipment. Since this was my very first job, I was also able to develop many ess
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="rounded mx-auto d-block w-80" src="images/avro.png" alt="Second slide">
+                    <img class="rounded mx-auto d-block w-80" src="images/canoe.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Sightseeing</h5>
+                        <h2>Canoeing</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="rounded mx-auto d-block w-80" src="images/indie.png" alt="Third slide">
+                    <img class="rounded mx-auto d-block w-80" src="images/urban.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Urban Exploration</h5>
+                        <h2>Exploring</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="rounded mx-auto d-block w-80" src="images/travel.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Traveling</h5>
                     </div>
                 </div>
             </div>
@@ -237,9 +243,20 @@ equipment. Since this was my very first job, I was also able to develop many ess
         </p>
     </div>
 
-    <footer>
-
+    <footer align = "center">
+        <div class="container card-footer rounded">
+            <a href="https://github.com/cloudislife8899" target="_blank" class ="fa fa-github fa-2x"></a>
+            <a href="https://www.linkedin.com/in/michael-a-wang" target="_blank" class ="fa fa-linkedin fa-2x"></a>
+        </div>
     </footer>
 
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
